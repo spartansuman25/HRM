@@ -3,7 +3,6 @@ namespace App\Http\Controllers;
 
 use App\Jobs\ExportData;
 use App\Models\Employee;
-use App\Models\EmployeeUpload;
 use App\Models\Role;
 use App\Models\UserRole;
 use App\Promotion;
@@ -13,7 +12,7 @@ use Illuminate\Http\Response;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
-use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades;
 use Maatwebsite\Excel\Facades\Excel;
 
 class EmpController extends Controller
@@ -522,7 +521,7 @@ class EmpController extends Controller
     }
 
 
-    public function showDetails()
+    public function showDetails(): \Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Contracts\Foundation\Application
     {
         $emps = User::with('employee')->paginate(15);
         return view('hrms.employee.show_bank_detail', compact('emps'));

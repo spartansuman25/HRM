@@ -1,5 +1,9 @@
 <?php
 
+use Database\Seeders\EmployeeSeeder;
+use Database\Seeders\RolesSeeder;
+use Database\Seeders\UserRolesSeeder;
+use Database\Seeders\UserSeeder;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder

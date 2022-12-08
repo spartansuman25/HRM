@@ -1,6 +1,9 @@
 <?php
 
-    function totalLeaves($leaveType)
+use App\Models\LeaveType;
+use App\User;
+
+function totalLeaves($leaveType)
     {
         $result = [
             '1'  => '24',//casual leave
@@ -74,7 +77,7 @@
 
     function getLeaveType($leave_id)
     {
-        $result = \App\Models\LeaveType::where('id', $leave_id)->first();
+        $result = LeaveType::where('id', $leave_id)->first();
 
         return $result->leave_type;
     }
@@ -189,7 +192,8 @@
         return $data[$status];
     }
 
-    function qualification()
+    function
+    qualification()
     {
         $data = [
             ''                           => 'Select one',
@@ -235,7 +239,7 @@
 
     function getUserData($userId)
     {
-        $user = \App\User::where('id', $userId)->with('employee')->first();
+        $user = User::where('id', $userId)->with('employee')->first();
 
         return $user;
     }

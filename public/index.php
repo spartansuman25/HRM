@@ -4,7 +4,7 @@
  * Laravel - A PHP Framework For Web Artisans
  *
  * @package  Laravel
- * @author   Rayhan Zaman <rayhan.zaman333@gmail.com>
+ * @author   Clonned
  */
 
 /*

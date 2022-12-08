@@ -60,7 +60,7 @@
                     </div>
                 </div>
             </div>
-                <div class="col-sm-6 col-xl-3">
+       <!--         <div class="col-sm-6 col-xl-3">
                     <div class="panel panel-tile">
                         <div class="panel-body">
                             <div class="row pv10">
@@ -85,8 +85,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            <div class="col-sm-6 col-xl-3">
+                </div>-->
+<!--            <div class="col-sm-6 col-xl-3">
                 <div class="panel panel-tile">
                     <div class="panel-body">
                         <div class="row pv10">
@@ -99,7 +99,7 @@
                     </div>
                 </div>
             </div>
-
+-->
 
             @endif
                 @if(!Auth::user()->isHR())

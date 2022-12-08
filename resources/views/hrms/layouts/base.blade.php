@@ -4,7 +4,7 @@
 <head>
     <!-- -------------- Meta and Title -------------- -->
     <meta charset="utf-8">
-    <title> Human Resource Management System </title>
+    <title> Techmauri HRMS </title>
     <meta name="description" content="HRMS">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf_token" content="{{csrf_token()}}">
@@ -35,7 +35,7 @@
 
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('assets/js/plugins/select2/css/core.css') }}">
     <!-- -------------- Favicon -------------- -->
-    <link rel="shortcut icon" href="{{ URL::asset('assets/img/favicon.png') }}">
+    <link rel="shortcut icon" href="{{ URL::asset('assets/img/techlogo.png') }}">
 
     <!--  Custom css -->
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('assets/custom.css') }}">
